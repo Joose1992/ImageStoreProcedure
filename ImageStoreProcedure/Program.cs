@@ -8,13 +8,12 @@ namespace ImageStoreProcedure
     {
         static void Main(string[] args)
         {
-            string path = @"C:\Users\josem\Pictures\Screenshots\Screenshot 2023-09-28 121500.png";
+            /*string path = @"C:\Users\josem\Pictures\Screenshots\Screenshot 2023-09-28 121500.png";
             StoreImage store = new StoreImage(path);
-            store.UploadImage();
+            store.UploadImage();*/
+            int imageID = 2;
+            ReadImageFromDb db = new ReadImageFromDb(imageID);
+            db.DownloadAndSaveImage();
         }
-
-        
-
-        
     }
 }
